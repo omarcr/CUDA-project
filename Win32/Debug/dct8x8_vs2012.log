@@ -1,0 +1,29 @@
+﻿Build started 11/22/2013 3:36:50 PM.
+     1>Project "C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.5\3_Imaging\dct8x8mine\dct8x8_vs2012.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_MBCS /I./ /I../../common/inc /I./ /I../../common/inc /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I. /FIcuda_runtime.h /c "C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.5\3_Imaging\dct8x8mine\dct8x8.cu" 
+       CudaBuild:
+         Compiling CUDA source file dct8x8.cu...
+         cmd.exe /C "C:\Users\miglab-big\AppData\Local\Temp\tmpb8b9e6eda935410ba544018e31701274.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I./ -I../../common/inc -I./ -I../../common/inc -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static -Xcompiler "/wd 4819"  -g   -DWIN32 -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MTd  " -o Win32/Debug/dct8x8.cu.obj "C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.5\3_Imaging\dct8x8mine\dct8x8.cu"
+         
+         C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.5\3_Imaging\dct8x8mine>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -I./ -I../../common/inc -I./ -I../../common/inc -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static -Xcompiler "/wd 4819"  -g   -DWIN32 -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MTd  " -o Win32/Debug/dct8x8.cu.obj "C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.5\3_Imaging\dct8x8mine\dct8x8.cu" 
+       CudaBuild:
+         Skipping CUDA source file dct8x8_kernel1.cuh (excluded from build).
+       CudaBuild:
+         Skipping CUDA source file dct8x8_kernel2.cuh (excluded from build).
+       CudaBuild:
+         Skipping CUDA source file dct8x8_kernel_quantization.cuh (excluded from build).
+       CudaBuild:
+         Skipping CUDA source file dct8x8_kernel_short.cuh (excluded from build).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\/dct8x8.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\Win32" cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\dct8x8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\dct8x8.lib" /MACHINE:X86 Win32/Debug/dct8x8.cu.obj
+         Win32/Debug/BmpUtil.obj
+         Win32/Debug/dct8x8_gold.obj
+         dct8x8_vs2012.vcxproj -> C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.5\3_Imaging\dct8x8mine\.\dct8x8.exe
+     1>Done Building Project "C:\ProgramData\NVIDIA Corporation\CUDA Samples\v5.5\3_Imaging\dct8x8mine\dct8x8_vs2012.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:33.49
